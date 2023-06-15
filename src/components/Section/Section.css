@@ -26,6 +26,9 @@
     resize: none;
     overflow-y: hidden;
 }
+.title:disabled{
+    color: black;
+}
 
 .description {
     z-index: 10;
