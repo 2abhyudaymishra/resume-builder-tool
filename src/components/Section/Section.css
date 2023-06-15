@@ -1,0 +1,70 @@
+.Section{
+    display: flex;
+    justify-content: flex-start;
+    gap:30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+    align-items: center;
+    border: none;
+    margin: 15px 0px;
+    background-color: #fff;
+}
+.grey{
+    background-color: lightgray;
+}
+.heading{
+    flex:1;
+}
+.title {
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 0px 10px;
+    background-color: inherit;
+    float: left;
+    height: auto;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.description {
+    z-index: 10;
+    position: relative;
+}
+
+.edit svg {
+    z-index: 2;
+    cursor: pointer;
+}
+.edit input{
+    background: #fff;
+    font-size: 1.2rem;
+    border: none;
+}
+.noborder{
+    border: none;
+}
+
+
+@media screen and (max-width: 900px){
+    .heading textarea{
+        width: 90%;
+        font-size: 0.8rem;
+        height: auto;
+    }
+    .Section{
+        gap:15px;
+        width: 85%;
+        margin: 12px auto;
+    }
+    .drag svg ,.edit svg, .description img{
+        height: 17px;
+        width: 17px;
+    }
+    .edit input{
+        background: #fff;
+        font-size: 0.8rem;
+        border: none;
+    }
+
+}
